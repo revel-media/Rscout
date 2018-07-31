@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rscout</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forget_password">نسيت كلمة المرور</string>
+    <string name="checkingNetwork">هناك خطا في الاتصال بالانترنت</string>
+    <string name="wrong_login">خطأ فى البريد الالكترونى او كلمة المرور</string>
+    <string name="search">بحث</string>
+    <string name="done">تم</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="na">NA</string>
+</resources>

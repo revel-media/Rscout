@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/loginLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_height="90dp"
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rezetopia"/>
+                <com.krito.io.rscout.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="35dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/namewhite" />
+
+                <View
+                    android:background="@color/green5"
+                    android:layout_height="40dp"
+                    android:layout_width="10dp"
+                    android:layout_gravity="center|center_vertical|center_horizontal"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <com.krito.io.rscout.views.CustomEditText
+                    android:id="@+id/emailView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/roundtwo_green"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/username"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/green2"
+                    android:layout_marginStart="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/passwordwhite" />
+                <View
+                    android:background="@color/green5"
+                    android:layout_height="40dp"
+                    android:layout_width="10dp"
+                    android:layout_gravity="center|center_vertical|center_horizontal"
+                    android:layout_marginStart="20dp"
+                    />
+                <com.krito.io.rscout.views.CustomEditText
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:drawablePadding="5dp"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/green2"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/passwordView"
+                    android:background="@drawable/roundtwo_green"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:gravity="center">
+
+                <!--<app.rezetopia.ahmed.rezetopiakrito.views.CustomTextView-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginTop="@dimen/lv_divider_height"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginLeft="@dimen/large_margin"-->
+                <!--android:layout_marginRight="@dimen/large_margin"-->
+                <!--android:id="@+id/txtvForgetPass"-->
+                <!--android:textSize="@dimen/txtsize"-->
+                <!--android:text="@string/forget_password"-->
+                <!--/>-->
+
+                <!--<io.krito.com.reze.views.CustomButton-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginLeft="70dp"-->
+                <!--android:layout_marginRight="70dp"-->
+                <!--android:id="@+id/btnSignIn"-->
+                <!--android:textSize="@dimen/bigger_text_size"-->
+                <!--android:text="@string/sign_in"-->
+                <!--android:background="@drawable/rect_white"/>-->
+
+                <io.rmiri.buttonloading.ButtonLoading
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    app:BL_backgroundColor="#80ffffff"
+                    app:BL_circleColor="@color/white"
+                    app:BL_circleColorSecond="#80ffffff"
+                    app:BL_enable="true"
+                    app:BL_stateShow="normal"
+                    app:BL_text="Login"
+                    app:BL_textColor="@color/black"
+                    app:BL_textSize="20sp" />
+
+
+                <!--<com.facebook.login.widget.LoginButton-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/login_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginBottom="30dp" />-->
+
+
+                <com.krito.io.rscout.views.CustomTextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/forgetPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
