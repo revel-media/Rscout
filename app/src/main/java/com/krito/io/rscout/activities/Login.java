@@ -101,7 +101,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void login(String email, String password){
-        String url = "https://rezetopia.com/Apis/login";
+        String url = "https://rezetopia.com/Apis/login/scout/login";
         StringRequest post = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

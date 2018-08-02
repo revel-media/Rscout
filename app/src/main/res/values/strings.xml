@@ -10,9 +10,11 @@
     <string name="time_out">Connection TimeOut! Please check your internet connection.</string>
     <string name="unknown_error">Unknown Error</string>
     <string name="wrong_login">Invalid Credentials</string>
-    <string name="search">Search</string>
-    <string name="done">done</string>
+    <string name="search">Search by code</string>
+    <string name="done">Done</string>
+    <string name="start">Start</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
     <string name="na">NA</string>
+    <string name="logout">Logout</string>
 </resources>

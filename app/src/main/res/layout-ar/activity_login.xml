@@ -25,20 +25,18 @@
                 android:layout_gravity="center">
 
                 <ImageView
+                    android:layout_marginTop="50dp"
                     android:layout_height="90dp"
                     android:layout_width="100dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/rezetopia"/>
-                <com.krito.io.rscout.views.CustomTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="35dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/white"/>
+                    android:src="@drawable/ic_logo_r"/>
 
             </LinearLayout>
+
             <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="50dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -50,7 +48,7 @@
                     android:background="@drawable/namewhite" />
 
                 <View
-                    android:background="@color/green5"
+                    android:background="@color/colorAccent"
                     android:layout_height="40dp"
                     android:layout_width="10dp"
                     android:layout_gravity="center|center_vertical|center_horizontal"
@@ -75,11 +73,14 @@
                     android:paddingRight="5dp"
                     android:paddingTop="0dp"
                     android:textColor="@android:color/white"
-                    android:textColorHint="@color/green2"
+                    android:textColorHint="@color/colorPrimary"
                     android:layout_marginStart="5dp"
                     />
             </LinearLayout>
+
             <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -91,12 +92,13 @@
                     android:layout_marginStart="5dp"
                     android:background="@drawable/passwordwhite" />
                 <View
-                    android:background="@color/green5"
+                    android:background="@color/colorAccent"
                     android:layout_height="40dp"
                     android:layout_width="10dp"
                     android:layout_gravity="center|center_vertical|center_horizontal"
                     android:layout_marginStart="20dp"
                     />
+
                 <com.krito.io.rscout.views.CustomEditText
                     android:id="@+id/passwordView"
                     android:layout_width="match_parent"
@@ -115,11 +117,12 @@
                     android:paddingRight="5dp"
                     android:paddingTop="0dp"
                     android:textColor="@android:color/white"
-                    android:textColorHint="@color/green2"
+                    android:textColorHint="@color/colorPrimary"
                     android:layout_marginStart="5dp"
                     />
 
             </LinearLayout>
+
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_height="wrap_content"
@@ -168,14 +171,14 @@
                     android:paddingBottom="5dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginRight="70dp"
-                    app:BL_backgroundColor="#80ffffff"
-                    app:BL_circleColor="@color/white"
-                    app:BL_circleColorSecond="#80ffffff"
+                    app:BL_backgroundColor="#329914"
+                    app:BL_circleColor="@color/green5"
+                    app:BL_circleColorSecond="@color/green"
                     app:BL_enable="true"
                     app:BL_stateShow="normal"
                     app:BL_text="Login"
-                    app:BL_textColor="@color/black"
-                    app:BL_textSize="20sp" />
+                    app:BL_textColor="@color/white"
+                    app:BL_textSize="15sp" />
 
 
                 <!--<com.facebook.login.widget.LoginButton-->
@@ -189,6 +192,7 @@
 
 
                 <com.krito.io.rscout.views.CustomTextView
+                    android:visibility="gone"
                     android:layout_marginTop="20dp"
                     android:id="@+id/forgetPassword"
                     android:layout_width="wrap_content"

@@ -3,11 +3,13 @@ package com.krito.io.rscout.pojo;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 /**
- * Created by Mona Abdallh on 7/30/2018.
+ * Created by Ahmed Ali on 7/30/2018.
  */
 
-public class Action {
+public class Action implements Serializable{
 
     @SerializedName("id")
     @Expose

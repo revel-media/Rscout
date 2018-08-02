@@ -16,6 +16,20 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">#E1E1E1</item>
+        <item name="radioButtonStyle">@style/MyRadioButtonStyle</item>
+        <item name="android:radioButtonStyle">@style/MyRadioButtonStyle</item>
+        <item name="checkboxStyle">@style/MyCheckBoxStyle</item>
+        <item name="android:checkboxStyle">@style/MyCheckBoxStyle</item>
+    </style>
+
+    <style name="MyCheckBoxStyle" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@drawable/selector</item>
+        <item name="buttonTint">@drawable/selector</item>
+    </style>
+
+    <style name="MyRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@drawable/selector</item>
+        <item name="buttonTint">@drawable/selector</item>
     </style>
 
 </resources>

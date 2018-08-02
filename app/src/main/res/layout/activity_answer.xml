@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.krito.io.rscout.activities.Answer"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_logo_r"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorAccent"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoutsRecView"/>
+    </LinearLayout>
+
+    <id.arieridwan.lib.PageLoader
+        android:layout_gravity="center"
+        android:id="@+id/pageLoader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:setLoadingText="Please wait..."
+        app:setErrorText="Something happened"
+        app:setTextColor="@color/black"
+        app:setTextSize="16sp"
+        app:setLoadingImage="@drawable/rezetopia"
+        app:setLoadingAnimationMode="rotate"/>
+
+</FrameLayout>
