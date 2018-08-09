@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.krito.io.rscout.activities.Splash"
-    android:background="@color/background">
-
+    tools:context="com.krito.io.rscout.activities.Splash">
 
     <ImageView
-        android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_logo_r"
-        android:layout_centerInParent="true"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rscout_back"/>
 
-    <ProgressBar
-        android:layout_marginTop="3dp"
-        android:layout_centerInParent="true"
-        android:id="@+id/pb"
-        android:layout_width="150dp"
-        android:layout_height="3dp"
-        android:layout_below="@id/logo"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:progressDrawable="@drawable/progress"
-        android:maxHeight="10dip"
-        android:minHeight="5dip"
-        />
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
 
-</RelativeLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/rlogo"
+            android:layout_centerInParent="true"/>
+
+        <ProgressBar
+            android:layout_marginTop="3dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/pb"
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/logo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/progress"
+            android:maxHeight="10dip"
+            android:minHeight="5dip"
+            />
+
+    </RelativeLayout>
+</FrameLayout>

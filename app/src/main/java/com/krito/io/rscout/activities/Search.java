@@ -46,7 +46,6 @@ public class Search extends AppCompatActivity {
     String userId;
 
 
-
     ProgressBar progressBar;
     EditText search;
     FrameLayout userInfoLayout;
@@ -106,21 +105,21 @@ public class Search extends AppCompatActivity {
                     .setMenu(R.menu.search_menu)
                     .setAutoCancel(true)
                     .setClick(item -> {
-                        switch (item.getItemId()){
+                        switch (item.getItemId()) {
                             case R.id.logout:
                                 getSharedPreferences(AppConfig.SHARED_PREFERENCE_NAME, MODE_PRIVATE)
                                         .edit().putString(AppConfig.LOGGED_IN_USER_ID_SHARED, null).apply();
                                 startActivity(new Intent(this, Login.class));
                                 finish();
                                 return false;
-                                default:
-                                    return false;
+                            default:
+                                return false;
                         }
                     }).show();
         });
 
         start.setOnClickListener(v -> {
-            if (items != null && items.size() > 0){
+            if (items != null && items.size() > 0) {
                 Intent intent = new Intent(Search.this, Answer.class);
                 intent.putExtra("items", items);
                 intent.putExtra("answers", answers);
@@ -129,14 +128,14 @@ public class Search extends AppCompatActivity {
             }
         });
 
-        if (userId == null || userId.isEmpty()){
+        if (userId == null || userId.isEmpty()) {
             startActivity(new Intent(this, Login.class));
             finish();
         }
     }
 
 
-    private void performGetScouting(String q){
+    private void performGetScouting(String q) {
         String url = "https://rezetopia.com/Apis/challenges?code_id=" + q;
 
         VolleyCustomRequest request = new VolleyCustomRequest(Request.Method.GET, url, Scout.class,
@@ -146,12 +145,12 @@ public class Search extends AppCompatActivity {
                         progressBar.setVisibility(View.GONE);
                         searchIcon.setVisibility(View.VISIBLE);
                         if (!response.isError()) {
-                            if (response.getActions() != null && response.getActions().length > 0){
+                            if (response.getActions() != null && response.getActions().length > 0) {
                                 Log.i("scout_response", "onResponse: ");
                                 ArrayList<Action> tmpActions = new ArrayList<>(Arrays.asList(response.getActions()));
                                 items = new ArrayList<>();
 
-                                for (Action action:tmpActions) {
+                                for (Action action : tmpActions) {
                                     ActionItem item = new ActionItem();
                                     item.setType(ActionItem.QUESTION);
                                     item.setAttempts(action.getAttempt());
@@ -159,7 +158,7 @@ public class Search extends AppCompatActivity {
                                     item.setQuestionString(action.getAction());
                                     items.add(item);
 
-                                    for (int i = 0; i < action.getAttempt(); i++){
+                                    for (int i = 0; i < action.getAttempt(); i++) {
                                         ActionItem item1 = new ActionItem();
                                         item1.setType(ActionItem.ANSWER);
                                         item1.setAnswerString("na");
@@ -167,12 +166,12 @@ public class Search extends AppCompatActivity {
                                     }
                                 }
 
-                                if (tmpActions.size() > 0){
+                                if (tmpActions.size() > 0) {
                                     start.setEnabled(true);
                                     questionIds = new ArrayList<>(items.size());
                                     answers = new ArrayList<>(items.size());
                                     for (int i = 0; i < items.size(); i++) {
-                                        answers.add(i , "na");
+                                        answers.add(i, "na");
                                         questionIds.add(i, "0");
                                     }
                                     userInfoLayout.setVisibility(View.VISIBLE);

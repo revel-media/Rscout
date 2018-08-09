@@ -22,7 +22,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_logo_r"/>
+                android:src="@drawable/rlogo"/>
 
         </FrameLayout>
 
@@ -38,16 +38,16 @@
             android:id="@+id/scoutsRecView"/>
     </LinearLayout>
 
-    <id.arieridwan.lib.PageLoader
-        android:layout_gravity="center"
-        android:id="@+id/pageLoader"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:setLoadingText="Please wait..."
-        app:setErrorText="Something happened"
-        app:setTextColor="@color/black"
-        app:setTextSize="16sp"
-        app:setLoadingImage="@drawable/rezetopia"
-        app:setLoadingAnimationMode="rotate"/>
+    <!--<id.arieridwan.lib.PageLoader-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/pageLoader"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:setLoadingText="Please wait..."-->
+        <!--app:setErrorText="Something happened"-->
+        <!--app:setTextColor="@color/black"-->
+        <!--app:setTextSize="16sp"-->
+        <!--app:setLoadingImage="@drawable/rlogo"-->
+        <!--app:setLoadingAnimationMode="bounce"/>-->
 
 </FrameLayout>

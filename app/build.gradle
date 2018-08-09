@@ -11,6 +11,8 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         android.compileOptions.sourceCompatibility 1.8
         android.compileOptions.targetCompatibility 1.8
+        //vectorDrawables.useSupportLibrary = true
+        //android.defaultConfig.vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
